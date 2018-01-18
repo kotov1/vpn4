@@ -183,7 +183,7 @@ ul
 
 /*PAGE STYLES START*/	
 .page
-	padding-bottom: 770px
+	padding-bottom: 20px
 	position: relative
 	overflow: hidden
 	background-color: #98b0f0
@@ -197,11 +197,11 @@ ul
 		width: 534px
 		height: 761px
 		position: absolute
-		bottom: 0
+		top: 25%
 		left: 50%
 		transform: translateX(-33%)
 		background: url('../img/fingers.png') no-repeat
-		background-position: center bottom
+		background-position: 50% 5px
 		z-index: -1
 
 	&::after
@@ -222,13 +222,6 @@ ul
 	&__container
 		width: 100%
 		padding: 1em
-
-h1
-	margin: 5px 0 0 0 
-	font: 1.875em 'BrandonBlack', sans-serif
-	color: #1D4BA7
-	text-transform: uppercase
-	text-align: center
 	
 
 .advantages
@@ -260,67 +253,45 @@ h1
 
 
 .table-wrap
-	margin-top: 19px
+	margin-top: 555px
 	position: relative
 	
 .purchase
-	margin-bottom: 20px
+	margin: 5px 0 0 0
 	text-align: center
-	color: rgba(255,255,255,.9)
+	color: rgba(255,255,255,.7)
 	font: 1.125em 'BrandonLight', sans-serif 
 
 .table-pricing
-	width: 90%
+	width: 100%
+	min-height: 190px 
 	margin: 0 auto 23px
-	padding-top: 20px
+	padding-top: 15px
 	border-radius: 3px
 	text-align: center
 	box-shadow: 0 7px 53.1px 5.9px rgba(0,0,0, .08)
-	background: rgba(255,255,255,.8)
+	background: #fff
 	position: relative
 	z-index: 1
-	
-	&:first-of-type
-		.price-new
-			color: #3377C1 
-	&:nth-of-type(2)
-		.price-new
-			color: #214EA7 
 	&:last-of-type
-		.price-new
-			color: #4D93D5 
+		margin-bottom: 0
 	
 	&:hover 
-		.popular
-			opacity: 1
-			width: 72%
 		.price-new
 			font-size: 58px
 			line-height: 56px
 		.pricing__button
-			display: block
+			display: inline-block
+			transition: all .2s
 
 .recomend
-	.popular
-		opacity: 1
-		width: 72%
 	.price-new
 		font-size: 58px
 		line-height: 56px
 	.pricing__button
-		display: block
+		display: inline-block
 
 
-
-
-.table-pricing
-	h3
-		margin: 0 0 10px 0
-		font: 14px "BrandonMedium", sans-serif
-		font-weight: 700 
-		text-transform: uppercase
-		color: #4e8dcf
-		letter-spacing: 2px
 		
 .date
 	font-size: 18px
@@ -338,10 +309,13 @@ h1
 		vertical-align: bottom
 		
 .price-new
-	padding-top: 23px
-	background-color: #FFF 
+	min-height: 40px
+	display: flex
+	align-items: center
+	justify-content: center 
 	font-size: 46px
 	line-height: 40px
+	color: #000
 	.symbol, .time
 		font-size: 30px
 		line-height: 39px	
@@ -349,7 +323,7 @@ h1
 
 .price-old
 	font-size: 30px
-	color: #FFF 
+	color: rgba(0,0,0,.2)
 	position: relative
 	&:after
 		content: ""
@@ -369,34 +343,16 @@ h1
 
 .table-pricing
 	.btn-wrap
-		background-color: #FFF
-		height: 31px
+		position: relative
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,0%)
 		
 .pricing__button
 	width: 215px
 	height: 40px
 	padding: 1em 0
 	display: none
-	position: relative
-	bottom: 0
-	left: 50%
-	transform: translate(-50%,10%)
-	transition: all 0.2s
-
-
-.popular
-	position: absolute
-	top: 0
-	left: 50%
-	width: 50%
-	padding: 2px 0
-	font: 15px 'BrandonBold', sans-serif 
-	color: #FFF
-	text-transform: uppercase
-	background-color: #ff3d4c
-	transform: translate(-50%,-50%)
-	border-radius: 6px   
-	opacity: 0.5
 	transition: all .2s
 
 /*PAGE STYLES END*/	
@@ -418,6 +374,8 @@ h1
 			margin: 0 auto 20px
 			width: 80%
 			
+	.table-pricing
+		width: 75%
 
 
 
@@ -431,8 +389,6 @@ h1
 		margin-left: auto
 		margin-right: auto
 		
-	.table-pricing
-		width: 75%
 		
 
 
@@ -478,7 +434,8 @@ h1
 		padding-top: 15px
 		padding-bottom: 30px
 		&::before
-			height: 785px
+			height: 735px
+			top: auto
 			bottom: 0
 			transform: translateX(-61%)
 			background-size: 100% 100%
@@ -486,11 +443,6 @@ h1
 			background-size: 49%, 50%, 46%, 50%, 100%, 176%, 190%, 168%
 			background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -409px 95%, -635px -83%, -656px -38%, -451px -39%
 			
-		h1
-			color: #1D4BA7 
-			font-size: 3.125em
-			padding: 0 1em
-			line-height: 1.2
 	
 	.advantages
 		width: 45%
@@ -507,17 +459,21 @@ h1
 
 		
 	.purchase
+		position: absolute
+		bottom: -15px
+		right: 0
 		margin-bottom: 0
 		text-align: right
 		
 	.table-wrap
 		margin-top: 75px
-		min-height: 250px 
+		min-height: 200px 
+		top: 20px
 		
 	.table-pricing
 		display: block
 		width: 220px
-		height: 225px
+		min-height: 170px
 		margin-bottom: 0
 		position: absolute
 		&:first-of-type
@@ -530,18 +486,18 @@ h1
 		&.table-center
 			z-index: 2
 		
-		&.recomend, &:hover
-			.popular
-				width: 85%
 		
 		.price-new
-			line-height: 54px
-				
-		.popular
-			width: 75%
+			line-height: 56px
+
+		.btn-wrap
+			position: absolute
+			bottom: -10%
+			transform: translateX(-50%)
 				
 		.pricing__button
 			max-width: 85% 
+			height: auto
 
 
 
@@ -575,6 +531,7 @@ h1
 		
 	.page
 		&::before
+			display: none
 			height: 785px
 			bottom: auto
 			left: 29%
@@ -584,12 +541,9 @@ h1
 			background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -383px -27%, -294px 0%, -474px 10%, -459px 24%
 			
 		&__content
-			width: 65%
-			margin-left: auto
-		h1
-			padding: 0 4em 0 0
-			text-align: left
-			line-height: 1.1
+
+
+
 
 	.advantages
 		width: 100%
@@ -600,8 +554,11 @@ h1
 			width: 47%
 			
 	.table-wrap
-		width: 100%
-		margin: 0
+		width: 67%
 		
 	.table-pricing
-		width: 245px
+		width: 250px
+		
+	.purchase
+		top: -35px
+		bottom: auto 
