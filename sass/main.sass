@@ -1,0 +1,607 @@
+@import "fonts"
+
+
+/*GENERAL STYLES START*/
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	max-width: 1920px
+	display: block
+	margin: 0 auto
+	position: relative
+	line-height: 1.4
+	font-family: 'BrandonMedium', sans-serif
+	overflow-x: hidden
+	opacity: 1
+	background-color: #fff
+
+.container
+	width: 100%
+	margin: 0 auto
+	padding: 1em
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+		
+	
+@keyframes buttonBlink
+	from 
+		box-shadow: 0px 0px 0px 0px #ff3d4c
+	50% 
+		box-shadow: 0px 0px 7px 0px #ff3d4c
+	to 
+		box-shadow: 0px 0px 0px 0px #ff3d4c
+		
+@keyframes textColorChange 
+	from 
+		color: rgba(0,0,0,.9)
+	25%
+		color: rgba(200,50,50,.9)
+	50%
+		color: rgba(50,200,50,.9)
+	75%
+		color: rgba(50,50,200,.9)
+	to 
+		color: rgba(0,0,0,.9)
+
+/*GENERAL STYLES END*/
+
+
+
+
+
+
+
+
+
+
+/*TOP LINE STYLES START*/		
+.top-line
+	// min-height: 137px
+	background-color: #FFF 
+	align-items: center
+	font-family: 'BrandonMedium', sans-serif 
+	position: relative
+
+	
+	&__content
+		margin-top: 10px
+		padding-top: 6px
+		width: 100%
+		display: none
+
+	.ip-panel
+		max-width: 350px 
+		margin: 0 auto 10px
+		padding: 5px 1.25em 
+		display: flex
+		justify-content: space-between
+		box-shadow: 0 2px 10px 1px rgba(0, 0, 0, .1)
+		border-radius: 5px
+		font-size: 14px
+		span
+			&:first-child
+				font-family: 'BrandonBold', sans-serif
+				display: inline-block
+				margin-right: 9px
+			&:last-child
+				animation: textColorChange 5s 1s infinite
+				
+.btn-wrap
+	text-align: center
+.button
+	padding: 5px 25px
+	background-color: #ff3d4c
+	border-radius: 30px
+	color: #fff
+	text-transform: uppercase
+	font-size: 13px
+	text-align: center
+	transition: all 0.5s
+	animation: buttonBlink 2s infinite
+	text-decoration: none
+	&:hover
+		animation: none
+		box-shadow: 0px 0px 10px #ff3d4c, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25)
+	
+.logo
+	max-width: 120px
+	margin: 0 auto 
+	text-align: center
+	overflow: hidden
+.logo__img
+	display: block
+	width: 100%
+	height: 100%
+
+.toggle-btn
+	width: 40px
+	height: 40px
+	background: url('../img/toggle-btn.png') no-repeat center center
+	position: absolute
+	top: 7px
+	right: 1%
+	z-index: 1
+	transform: rotate(180deg)
+	transition: all .5s
+
+
+.toggle-btn.on 
+	transform: rotate(0deg)
+	transition: transform .5s
+
+
+/*TOP LINE STYLES END*/		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE STYLES START*/	
+.page
+	padding-bottom: 770px
+	position: relative
+	overflow: hidden
+	background-color: #98b0f0
+	background: url('../img/bg.jpg') no-repeat
+	background-size: cover
+	background-position: 37% 0 
+	z-index: 1
+	&:before
+		content: "" 
+		display: block
+		width: 534px
+		height: 761px
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-33%)
+		background: url('../img/fingers.png') no-repeat
+		background-position: center bottom
+		z-index: -1
+
+	&::after
+		content: '' 
+		background-image: url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png")
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
+		background-size: 102%, 125%, 131%, 140%, 208%, 217%, 214%, 302%
+		background-position: -99px 29%, -131px 29%, -135px 29%, -154px 28%, -217px 26%, -247px 21%, -260px 16%, -478px 0%
+		display: block
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -2
+
+
+	&__container
+		width: 100%
+		padding: 1em
+
+h1
+	margin: 5px 0 0 0 
+	font: 1.875em 'BrandonBlack', sans-serif
+	color: #1D4BA7
+	text-transform: uppercase
+	text-align: center
+	
+
+.advantages
+	margin-top: 24px
+	color: #FFF
+	font-size: 1.125em
+	li
+		display: flex
+		margin-bottom: 17px
+
+	.svg-wrap
+		width: 25%
+		
+		margin-right: 10px
+		img
+			margin: 0 auto
+			display: block
+			max-width: 100%
+			width: 45px
+			max-height: 45px
+			
+	&__text
+		display: block
+		width: 75%
+		align-self: center 
+		font-weight: normal
+
+
+
+
+.table-wrap
+	margin-top: 19px
+	position: relative
+	
+.purchase
+	margin-bottom: 20px
+	text-align: center
+	color: rgba(255,255,255,.9)
+	font: 1.125em 'BrandonLight', sans-serif 
+
+.table-pricing
+	width: 90%
+	margin: 0 auto 23px
+	padding-top: 20px
+	border-radius: 3px
+	text-align: center
+	box-shadow: 0 7px 53.1px 5.9px rgba(0,0,0, .08)
+	background: rgba(255,255,255,.8)
+	position: relative
+	z-index: 1
+	
+	&:first-of-type
+		.price-new
+			color: #3377C1 
+	&:nth-of-type(2)
+		.price-new
+			color: #214EA7 
+	&:last-of-type
+		.price-new
+			color: #4D93D5 
+	
+	&:hover 
+		.popular
+			opacity: 1
+			width: 72%
+		.price-new
+			font-size: 58px
+			line-height: 56px
+		.pricing__button
+			display: block
+
+.recomend
+	.popular
+		opacity: 1
+		width: 72%
+	.price-new
+		font-size: 58px
+		line-height: 56px
+	.pricing__button
+		display: block
+
+
+
+
+.table-pricing
+	h3
+		margin: 0 0 10px 0
+		font: 14px "BrandonMedium", sans-serif
+		font-weight: 700 
+		text-transform: uppercase
+		color: #4e8dcf
+		letter-spacing: 2px
+		
+.date
+	font-size: 18px
+	font-family: "BrandonBold", sans-serif
+	margin: 0
+
+.price
+	font-family: "BrandonBlack", sans-serif
+	margin: 0
+	.symbol, .time
+		font-family: "BrandonMedium", sans-serif
+		vertical-align: top
+		line-height: 30px
+	.time
+		vertical-align: bottom
+		
+.price-new
+	padding-top: 23px
+	background-color: #FFF 
+	font-size: 46px
+	line-height: 40px
+	.symbol, .time
+		font-size: 30px
+		line-height: 39px	
+	
+
+.price-old
+	font-size: 30px
+	color: #FFF 
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		left: 50%
+		top: 50%
+		display: block
+		width: 3.5em
+		height: 2px
+		background-color: #FF3D4C 
+		transform: translate(-50%,-50%)
+	.symbol
+		font-size: 26px
+	.time
+		font-size: 18px
+		
+
+.table-pricing
+	.btn-wrap
+		background-color: #FFF
+		height: 31px
+		
+.pricing__button
+	width: 215px
+	height: 40px
+	padding: 1em 0
+	display: none
+	position: relative
+	bottom: 0
+	left: 50%
+	transform: translate(-50%,10%)
+	transition: all 0.2s
+
+
+.popular
+	position: absolute
+	top: 0
+	left: 50%
+	width: 50%
+	padding: 2px 0
+	font: 15px 'BrandonBold', sans-serif 
+	color: #FFF
+	text-transform: uppercase
+	background-color: #ff3d4c
+	transform: translate(-50%,-50%)
+	border-radius: 6px   
+	opacity: 0.5
+	transition: all .2s
+
+/*PAGE STYLES END*/	
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 480px)
+	.container
+		max-width: 450px
+		
+	.top-line
+		.ip-panel
+			margin: 0 auto 20px
+			width: 80%
+			
+
+
+
+
+@media only screen and (min-width : 576px)
+	.container
+		max-width: 540px
+	
+	.advantages
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+		
+	.table-pricing
+		width: 75%
+		
+
+
+
+
+
+
+
+@media only screen and (min-width : 768px)
+	.container 
+		max-width: 720px
+		
+	.top-line
+		min-height: 70px
+		padding-top: 5px
+		&__wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+		.logo
+			line-height: 1em
+		&__content
+			margin-top: 0
+			padding-top: 0
+			display: flex
+			justify-content: flex-end
+			align-items: center
+		.ip-panel
+			margin: 0 20px 0 0
+			width: auto
+			min-width: 260px
+			span
+				&:first-child
+					margin-right: 5px
+		.button
+			font-size: 11px
+			padding: 5px 20px
+		
+	.toggle-btn
+		display: none
+		
+	.page
+		padding-top: 15px
+		padding-bottom: 30px
+		&::before
+			height: 785px
+			bottom: 0
+			transform: translateX(-61%)
+			background-size: 100% 100%
+		&::after
+			background-size: 49%, 50%, 46%, 50%, 100%, 176%, 190%, 168%
+			background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -409px 95%, -635px -83%, -656px -38%, -451px -39%
+			
+		h1
+			color: #1D4BA7 
+			font-size: 3.125em
+			padding: 0 1em
+			line-height: 1.2
+	
+	.advantages
+		width: 45%
+		margin: 20px 0 0 auto
+		z-index: 1
+		li
+			margin-bottom: 22px
+			&.advantages__text
+				width: 65%
+		.svg-wrap
+			img
+				width: 52px
+				max-height: 52px
+
+		
+	.purchase
+		margin-bottom: 0
+		text-align: right
+		
+	.table-wrap
+		margin-top: 75px
+		min-height: 250px 
+		
+	.table-pricing
+		display: block
+		width: 220px
+		height: 225px
+		margin-bottom: 0
+		position: absolute
+		&:first-of-type
+			left: 50%
+			transform: translateX(-50%)
+		&:nth-of-type(2)
+			left: 0
+		&:last-of-type
+			right: 0
+		&.table-center
+			z-index: 2
+		
+		&.recomend, &:hover
+			.popular
+				width: 85%
+		
+		.price-new
+			line-height: 54px
+				
+		.popular
+			width: 75%
+				
+		.pricing__button
+			max-width: 85% 
+
+
+
+@media only screen and (min-width : 992px)
+	.container
+		max-width: 960px
+		
+	.table-wrap
+		width: 75%
+		margin: 75px auto 0 
+
+
+
+
+
+
+@media only screen and (min-width : 1200px)
+	.container
+		max-width: 1200px
+		
+	.top-line
+		.ip-panel
+			margin-right: 40px
+			width: auto
+			min-width: 310px
+			
+		.button
+			font-size: 13px
+			padding: 12px 25px
+			font-weight: normal
+		
+	.page
+		&::before
+			height: 785px
+			bottom: auto
+			left: 29%
+			top: 11%
+		&::after
+			background-size: 50%, 50%, 46%, 50%, 100%, 100%, 117%, 135%
+			background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -383px -27%, -294px 0%, -474px 10%, -459px 24%
+			
+		&__content
+			width: 65%
+			margin-left: auto
+		h1
+			padding: 0 4em 0 0
+			text-align: left
+			line-height: 1.1
+
+	.advantages
+		width: 100%
+		margin-left: 0
+		display: flex
+		flex-wrap: wrap
+		li
+			width: 47%
+			
+	.table-wrap
+		width: 100%
+		margin: 0
+		
+	.table-pricing
+		width: 245px
