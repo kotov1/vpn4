@@ -27,61 +27,51 @@
   src: url("../fonts/BrandonMedium/BrandonGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BrandonMedium/BrandonGrotesque-Medium.woff") format("woff"), url("../fonts/BrandonMedium/BrandonGrotesque-Medium.ttf") format("truetype");
 }
 /*GENERAL STYLES START */
-/* line 5, ../sass/main.sass */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 7, ../sass/main.sass */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 10, ../sass/main.sass */
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 14, ../sass/main.sass */
 *:-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 18, ../sass/main.sass */
 *::-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 22, ../sass/main.sass */
 *:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 26, ../sass/main.sass */
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #666;
 }
 
-/* line 29, ../sass/main.sass */
 body input:required:valid,
 body textarea:required:valid {
   color: #666;
 }
 
-/* line 33, ../sass/main.sass */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 38, ../sass/main.sass */
 body {
   font-size: 16px;
   min-width: 320px;
@@ -96,14 +86,12 @@ body {
   background-color: #fff;
 }
 
-/* line 51, ../sass/main.sass */
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 1em;
 }
 
-/* line 55, ../sass/main.sass */
 ul {
   margin: 0;
   padding: 0;
@@ -175,7 +163,6 @@ ul {
 }
 /*GENERAL STYLES END */
 /*TOP LINE STYLES START */
-/* line 93, ../sass/main.sass */
 .top-line {
   background-color: #FFF;
   -webkit-box-align: center;
@@ -184,14 +171,12 @@ ul {
   font-family: "BrandonMedium", sans-serif;
   position: relative;
 }
-/* line 101, ../sass/main.sass */
 .top-line__content {
   margin-top: 10px;
   padding-top: 6px;
   width: 100%;
   display: none;
 }
-/* line 107, ../sass/main.sass */
 .top-line .ip-panel {
   max-width: 350px;
   margin: 0 auto 10px;
@@ -207,24 +192,20 @@ ul {
   border-radius: 5px;
   font-size: 14px;
 }
-/* line 117, ../sass/main.sass */
 .top-line .ip-panel span:first-child {
   font-family: "BrandonBold", sans-serif;
   display: inline-block;
   margin-right: 9px;
 }
-/* line 121, ../sass/main.sass */
 .top-line .ip-panel span:last-child {
   -webkit-animation: textColorChange 5s 1s infinite;
           animation: textColorChange 5s 1s infinite;
 }
 
-/* line 124, ../sass/main.sass */
 .btn-wrap {
   text-align: center;
 }
 
-/* line 126, ../sass/main.sass */
 .button {
   padding: 5px 25px;
   background-color: #ff3d4c;
@@ -239,7 +220,6 @@ ul {
           animation: buttonBlink 2s infinite;
   text-decoration: none;
 }
-/* line 137, ../sass/main.sass */
 .button:hover {
   -webkit-animation: none;
           animation: none;
@@ -247,7 +227,6 @@ ul {
           box-shadow: 0px 0px 10px #ff3d4c, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
 }
 
-/* line 141, ../sass/main.sass */
 .logo {
   max-width: 115px;
   width: 100%;
@@ -256,14 +235,12 @@ ul {
   overflow: hidden;
 }
 
-/* line 147, ../sass/main.sass */
 .logo__img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 152, ../sass/main.sass */
 .toggle-btn {
   width: 40px;
   height: 40px;
@@ -278,7 +255,6 @@ ul {
   transition: all 0.5s;
 }
 
-/* line 164, ../sass/main.sass */
 .toggle-btn.on {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -290,8 +266,9 @@ ul {
 
 /*TOP LINE STYLES END */
 /*PAGE STYLES START */
-/* line 186, ../sass/main.sass */
 .page {
+  height: 100vh;
+  min-height: 768px;
   padding-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -301,7 +278,6 @@ ul {
   background-position: 37% 0;
   z-index: 1;
 }
-/* line 195, ../sass/main.sass */
 .page:before {
   content: "";
   display: block;
@@ -316,7 +292,6 @@ ul {
   background-position: 50% 5px;
   z-index: -1;
 }
-/* line 208, ../sass/main.sass */
 .page::after {
   content: "";
   background-image: url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png");
@@ -331,31 +306,26 @@ ul {
   left: 0;
   z-index: -2;
 }
-/* line 223, ../sass/main.sass */
 .page__container {
   width: 100%;
   padding: 1em;
 }
 
-/* line 228, ../sass/main.sass */
 .advantages {
   margin-top: 24px;
   color: #FFF;
   font-size: 1.125em;
 }
-/* line 232, ../sass/main.sass */
 .advantages li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 17px;
 }
-/* line 236, ../sass/main.sass */
 .advantages .svg-wrap {
   width: 25%;
   margin-right: 10px;
 }
-/* line 240, ../sass/main.sass */
 .advantages .svg-wrap img {
   margin: 0 auto;
   display: block;
@@ -363,7 +333,6 @@ ul {
   width: 45px;
   max-height: 45px;
 }
-/* line 247, ../sass/main.sass */
 .advantages__text {
   display: block;
   width: 75%;
@@ -372,13 +341,11 @@ ul {
   font-weight: normal;
 }
 
-/* line 256, ../sass/main.sass */
 .table-wrap {
   margin-top: 555px;
   position: relative;
 }
 
-/* line 260, ../sass/main.sass */
 .purchase {
   margin: 5px 0 0 0;
   text-align: center;
@@ -386,7 +353,6 @@ ul {
   font: 1.125em "BrandonLight", sans-serif;
 }
 
-/* line 266, ../sass/main.sass */
 .table-pricing {
   width: 100%;
   min-height: 190px;
@@ -400,56 +366,46 @@ ul {
   position: relative;
   z-index: 1;
 }
-/* line 277, ../sass/main.sass */
 .table-pricing:last-of-type {
   margin-bottom: 0;
 }
-/* line 281, ../sass/main.sass */
 .table-pricing:hover .price-new {
   font-size: 58px;
   line-height: 56px;
 }
-/* line 284, ../sass/main.sass */
 .table-pricing:hover .pricing__button {
   display: inline-block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-/* line 289, ../sass/main.sass */
 .recomend .price-new {
   font-size: 58px;
   line-height: 56px;
 }
-/* line 292, ../sass/main.sass */
 .recomend .pricing__button {
   display: inline-block;
 }
 
-/* line 297, ../sass/main.sass */
 .date {
   font-size: 18px;
   font-family: "BrandonBold", sans-serif;
   margin: 0;
 }
 
-/* line 302, ../sass/main.sass */
 .price {
   font-family: "BrandonBlack", sans-serif;
   margin: 0;
 }
-/* line 305, ../sass/main.sass */
 .price .symbol, .price .time {
   font-family: "BrandonMedium", sans-serif;
   vertical-align: top;
   line-height: 30px;
 }
-/* line 309, ../sass/main.sass */
 .price .time {
   vertical-align: bottom;
 }
 
-/* line 312, ../sass/main.sass */
 .price-new {
   min-height: 40px;
   display: -webkit-box;
@@ -465,19 +421,16 @@ ul {
   line-height: 56px;
   color: #000;
 }
-/* line 320, ../sass/main.sass */
 .price-new .symbol, .price-new .time {
   font-size: 30px;
   line-height: 39px;
 }
 
-/* line 325, ../sass/main.sass */
 .price-old {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.2);
   position: relative;
 }
-/* line 329, ../sass/main.sass */
 .price-old:after {
   content: "";
   position: absolute;
@@ -490,16 +443,13 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 339, ../sass/main.sass */
 .price-old .symbol {
   font-size: 26px;
 }
-/* line 341, ../sass/main.sass */
 .price-old .time {
   font-size: 18px;
 }
 
-/* line 346, ../sass/main.sass */
 .table-pricing .btn-wrap {
   position: relative;
   bottom: 0;
@@ -508,7 +458,6 @@ ul {
           transform: translate(-50%, 0%);
 }
 
-/* line 352, ../sass/main.sass */
 .pricing__button {
   width: 215px;
   height: 40px;
@@ -520,29 +469,24 @@ ul {
 
 /*PAGE STYLES END */
 @media only screen and (min-width: 480px) {
-  /* line 370, ../sass/main.sass */
   .container {
     max-width: 450px;
   }
 
-  /* line 374, ../sass/main.sass */
   .top-line .ip-panel {
     margin: 0 auto 20px;
     width: 80%;
   }
 
-  /* line 378, ../sass/main.sass */
   .table-pricing {
     width: 75%;
   }
 }
 @media only screen and (min-width: 576px) {
-  /* line 385, ../sass/main.sass */
   .container {
     max-width: 540px;
   }
 
-  /* line 388, ../sass/main.sass */
   .advantages {
     width: 80%;
     margin-left: auto;
@@ -550,17 +494,14 @@ ul {
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 402, ../sass/main.sass */
   .container {
     max-width: 720px;
   }
 
-  /* line 405, ../sass/main.sass */
   .top-line {
     min-height: 70px;
     padding-top: 5px;
   }
-  /* line 408, ../sass/main.sass */
   .top-line__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -572,11 +513,9 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 412, ../sass/main.sass */
   .top-line .logo {
     line-height: 1em;
   }
-  /* line 414, ../sass/main.sass */
   .top-line__content {
     margin-top: 0;
     padding-top: 0;
@@ -590,68 +529,55 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 420, ../sass/main.sass */
   .top-line .ip-panel {
     margin: 0 20px 0 0;
     width: auto;
     min-width: 260px;
   }
-  /* line 425, ../sass/main.sass */
   .top-line .ip-panel span:first-child {
     margin-right: 5px;
   }
-  /* line 427, ../sass/main.sass */
   .top-line .button {
     font-size: 11px;
     padding: 5px 20px;
   }
 
-  /* line 431, ../sass/main.sass */
   .toggle-btn {
     display: none;
   }
 
-  /* line 434, ../sass/main.sass */
   .page {
     padding-top: 15px;
     padding-bottom: 30px;
   }
-  /* line 437, ../sass/main.sass */
   .page::before {
     height: 735px;
     top: auto;
-    bottom: 0;
     -webkit-transform: translateX(-61%);
             transform: translateX(-61%);
-    background-size: 100% 100%;
+    background-size: 100% 95%;
   }
-  /* line 443, ../sass/main.sass */
   .page::after {
     background-size: 124%, 123%, 122%, 120%, 140%, 160%, 180%, 200%;
     background-position: 337% -147%, 337% -147%, 337% -147%, 337% -147%, 193% -55%, 148% -24%, 99% 2%, 91% 8%;
   }
 
-  /* line 448, ../sass/main.sass */
   .advantages {
     width: 45%;
     margin: 20px 0 0 auto;
     z-index: 1;
   }
-  /* line 452, ../sass/main.sass */
   .advantages li {
     margin-bottom: 22px;
   }
-  /* line 454, ../sass/main.sass */
   .advantages li.advantages__text {
     width: 65%;
   }
-  /* line 457, ../sass/main.sass */
   .advantages .svg-wrap img {
     width: 52px;
     max-height: 52px;
   }
 
-  /* line 462, ../sass/main.sass */
   .purchase {
     position: absolute;
     bottom: -15px;
@@ -660,14 +586,12 @@ ul {
     text-align: right;
   }
 
-  /* line 469, ../sass/main.sass */
   .table-wrap {
     margin-top: 75px;
     min-height: 200px;
     top: 20px;
   }
 
-  /* line 474, ../sass/main.sass */
   .table-pricing {
     display: block;
     width: 220px;
@@ -675,37 +599,30 @@ ul {
     margin-bottom: 0;
     position: absolute;
   }
-  /* line 480, ../sass/main.sass */
   .table-pricing:first-of-type {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  /* line 483, ../sass/main.sass */
   .table-pricing:nth-of-type(2) {
     left: 0;
   }
-  /* line 485, ../sass/main.sass */
   .table-pricing:last-of-type {
     right: 0;
   }
-  /* line 487, ../sass/main.sass */
   .table-pricing.table-center {
     z-index: 2;
   }
-  /* line 491, ../sass/main.sass */
   .table-pricing .price-new {
     font-size: 46px;
     line-height: 56px;
   }
-  /* line 495, ../sass/main.sass */
   .table-pricing .btn-wrap {
     position: absolute;
     bottom: -10%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  /* line 500, ../sass/main.sass */
   .table-pricing .pricing__button {
     max-width: 85%;
     height: auto;
@@ -713,18 +630,15 @@ ul {
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 508, ../sass/main.sass */
   .container {
     max-width: 960px;
   }
 
-  /* line 511, ../sass/main.sass */
   .table-wrap {
     width: 75%;
     margin: 75px auto 0;
   }
 
-  /* line 515, ../sass/main.sass */
   .purchase {
     top: -35px;
     bottom: auto;
@@ -732,38 +646,32 @@ ul {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 526, ../sass/main.sass */
   .container {
     max-width: 1200px;
   }
 
-  /* line 530, ../sass/main.sass */
   .top-line .ip-panel {
     margin-right: 40px;
     width: auto;
     min-width: 310px;
   }
-  /* line 535, ../sass/main.sass */
   .top-line .button {
     font-size: 13px;
     padding: 12px 25px;
     font-weight: normal;
   }
 
-  /* line 541, ../sass/main.sass */
   .page::before {
-    bottom: -3%;
+    bottom: -5%;
     left: 50%;
     -webkit-transform: translateX(-34%);
             transform: translateX(-34%);
   }
-  /* line 545, ../sass/main.sass */
   .page::after {
     background-size: 60%, 65%, 70%, 75%, 86%, 106%, 118%, 155%;
     background-position: 50% -405%, 50% -353%, 50% -216%, 50% -150%, 50% -84%, 50% -28%, 50% -17%, 50% 4%;
   }
 
-  /* line 553, ../sass/main.sass */
   .advantages {
     width: 100%;
     margin-left: 0;
@@ -775,56 +683,47 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  /* line 559, ../sass/main.sass */
   .advantages .column {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
-  /* line 563, ../sass/main.sass */
   .advantages .left-column li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  /* line 565, ../sass/main.sass */
   .advantages .left-column .advantages__text {
     text-align: right;
   }
-  /* line 568, ../sass/main.sass */
   .advantages .right-column .advantages__text {
     text-align: left;
   }
-  /* line 571, ../sass/main.sass */
   .advantages li {
     margin-bottom: 38px;
   }
-  /* line 574, ../sass/main.sass */
   .advantages .svg-wrap {
     margin: 0;
   }
-  /* line 577, ../sass/main.sass */
   .advantages .advantages__text {
     width: 50%;
   }
 
-  /* line 580, ../sass/main.sass */
   .table-wrap {
+    position: relative;
+    top: 75px;
     width: 67%;
   }
 
-  /* line 583, ../sass/main.sass */
   .table-pricing {
     width: 250px;
   }
-  /* line 585, ../sass/main.sass */
   .table-pricing .pricing__button {
     max-width: 90%;
   }
 
-  /* line 588, ../sass/main.sass */
   .purchase {
     margin: 0;
     top: auto;
