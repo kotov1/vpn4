@@ -662,10 +662,9 @@ ul {
   }
 
   .page::before {
-    bottom: -5%;
-    left: 50%;
     -webkit-transform: translateX(-34%);
             transform: translateX(-34%);
+    background-size: 100% 97%;
   }
   .page::after {
     background-size: 60%, 65%, 70%, 75%, 86%, 106%, 118%, 155%;
