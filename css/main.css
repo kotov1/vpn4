@@ -320,8 +320,8 @@ ul {
   content: "";
   background-image: url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png"), url("../img/ellipse-white.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 102%, 125%, 131%, 140%, 208%, 217%, 214%, 302%;
-  background-position: -99px 29%, -131px 29%, -135px 29%, -154px 28%, -217px 26%, -247px 21%, -260px 16%, -478px 0%;
+  background-size: 200%, 200%, 200%, 200%, 250%, 250%, 250%, 250%;
+  background-position: 50% 52%, 50% 48%, 50% 47%, 50% 43%, 50% 41%, 50% 28%, 50% 25%, 50% 4%;
   display: block;
   position: absolute;
   width: 100%;
@@ -460,8 +460,8 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 46px;
-  line-height: 40px;
+  font-size: 58px;
+  line-height: 56px;
   color: #000;
 }
 /* line 319, ../sass/main.sass */
@@ -512,7 +512,7 @@ ul {
   width: 215px;
   height: 40px;
   padding: 1em 0;
-  display: none;
+  display: inline-block;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -626,8 +626,8 @@ ul {
   }
   /* line 442, ../sass/main.sass */
   .page::after {
-    background-size: 49%, 50%, 46%, 50%, 100%, 176%, 190%, 168%;
-    background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -409px 95%, -635px -83%, -656px -38%, -451px -39%;
+    background-size: 124%, 123%, 122%, 120%, 140%, 160%, 180%, 200%;
+    background-position: 337% -147%, 337% -147%, 337% -147%, 337% -147%, 193% -55%, 148% -24%, 99% 2%, 91% 8%;
   }
 
   /* line 447, ../sass/main.sass */
@@ -694,94 +694,140 @@ ul {
   }
   /* line 490, ../sass/main.sass */
   .table-pricing .price-new {
+    font-size: 46px;
     line-height: 56px;
   }
-  /* line 493, ../sass/main.sass */
+  /* line 494, ../sass/main.sass */
   .table-pricing .btn-wrap {
     position: absolute;
     bottom: -10%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  /* line 498, ../sass/main.sass */
+  /* line 499, ../sass/main.sass */
   .table-pricing .pricing__button {
     max-width: 85%;
     height: auto;
+    display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 505, ../sass/main.sass */
+  /* line 507, ../sass/main.sass */
   .container {
     max-width: 960px;
   }
 
-  /* line 508, ../sass/main.sass */
+  /* line 510, ../sass/main.sass */
   .table-wrap {
     width: 75%;
     margin: 75px auto 0;
   }
+
+  /* line 514, ../sass/main.sass */
+  .purchase {
+    top: -35px;
+    bottom: auto;
+    right: 0;
+  }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 518, ../sass/main.sass */
+  /* line 525, ../sass/main.sass */
   .container {
     max-width: 1200px;
   }
 
-  /* line 522, ../sass/main.sass */
+  /* line 529, ../sass/main.sass */
   .top-line .ip-panel {
     margin-right: 40px;
     width: auto;
     min-width: 310px;
   }
-  /* line 527, ../sass/main.sass */
+  /* line 534, ../sass/main.sass */
   .top-line .button {
     font-size: 13px;
     padding: 12px 25px;
     font-weight: normal;
   }
 
-  /* line 533, ../sass/main.sass */
+  /* line 540, ../sass/main.sass */
   .page::before {
-    display: none;
-    height: 785px;
-    bottom: auto;
-    left: 29%;
-    top: 11%;
+    bottom: -3%;
+    left: 50%;
+    -webkit-transform: translateX(-34%);
+            transform: translateX(-34%);
   }
-  /* line 539, ../sass/main.sass */
+  /* line 544, ../sass/main.sass */
   .page::after {
-    background-size: 50%, 50%, 46%, 50%, 100%, 100%, 117%, 135%;
-    background-position: -82px 263px, -106px 366px, -75px 323px, -119px 430px, -383px -27%, -294px 0%, -474px 10%, -459px 24%;
+    background-size: 60%, 65%, 70%, 75%, 86%, 106%, 118%, 155%;
+    background-position: 50% -405%, 50% -353%, 50% -216%, 50% -150%, 50% -84%, 50% -28%, 50% -17%, 50% 4%;
   }
 
-  /* line 548, ../sass/main.sass */
+  /* line 552, ../sass/main.sass */
   .advantages {
     width: 100%;
     margin-left: 0;
+    padding: 100px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  /* line 553, ../sass/main.sass */
+  /* line 558, ../sass/main.sass */
+  .advantages .column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  /* line 562, ../sass/main.sass */
+  .advantages .left-column li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  /* line 564, ../sass/main.sass */
+  .advantages .left-column .advantages__text {
+    text-align: right;
+  }
+  /* line 567, ../sass/main.sass */
+  .advantages .right-column .advantages__text {
+    text-align: left;
+  }
+  /* line 570, ../sass/main.sass */
   .advantages li {
-    width: 47%;
+    margin-bottom: 38px;
+  }
+  /* line 573, ../sass/main.sass */
+  .advantages .svg-wrap {
+    margin: 0;
+  }
+  /* line 576, ../sass/main.sass */
+  .advantages .advantages__text {
+    width: 50%;
   }
 
-  /* line 556, ../sass/main.sass */
+  /* line 579, ../sass/main.sass */
   .table-wrap {
     width: 67%;
   }
 
-  /* line 559, ../sass/main.sass */
+  /* line 582, ../sass/main.sass */
   .table-pricing {
     width: 250px;
   }
+  /* line 584, ../sass/main.sass */
+  .table-pricing .pricing__button {
+    max-width: 90%;
+  }
 
-  /* line 562, ../sass/main.sass */
+  /* line 587, ../sass/main.sass */
   .purchase {
-    top: -35px;
-    bottom: auto;
+    margin: 0;
+    top: auto;
+    right: -200px;
+    bottom: 30px;
   }
 }
