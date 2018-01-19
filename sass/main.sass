@@ -195,14 +195,14 @@ ul
 	&:before
 		content: "" 
 		display: block
-		width: 534px
-		height: 761px
+		width: 100%
+		height: 100%
 		position: absolute
-		top: 25%
-		left: 50%
-		transform: translateX(-33%)
+		top: -50px
+		left: 15%
 		background: url('../img/fingers.png') no-repeat
-		background-position: 50% 5px
+		background-position: 50% 47%
+		background-size:  100vw auto
 		z-index: -1
 
 	&::after
@@ -254,7 +254,7 @@ ul
 
 
 .table-wrap
-	margin-top: 555px
+	margin-top: 135%
 	position: relative
 	
 .purchase
@@ -375,6 +375,10 @@ ul
 			margin: 0 auto 20px
 			width: 80%
 			
+	.page
+		&:before
+			top: 10px
+			
 	.table-pricing
 		width: 85%
 
@@ -384,6 +388,14 @@ ul
 @media only screen and (min-width : 576px)
 	.container
 		max-width: 540px
+		
+
+	.page
+		&:before
+			left: 13%
+			background-size:  85vw auto
+		&::after
+			background-size: 138%, 140%, 174%, 151%, 168%, 156%, 166%, 215%
 	
 	.advantages
 		width: 80%
@@ -435,11 +447,10 @@ ul
 		min-height: 100vh
 		padding-top: 15px
 		padding-bottom: 30px
-		&::before
-			height: 735px
-			top: auto
-			transform: translateX(-61%)
-			background-size: 100% 95%
+		&:before
+			left: -6%
+			background-size:  670px auto
+			background-position: 50% 100%
 		&::after
 			background-size: 124%, 123%, 122%, 120%, 140%, 160%, 180%, 200%
 			background-position: 337% -147%, 337% -147%, 337% -147%, 337% -147%, 193% -55%, 148% -24%, 99% 2%, 91% 8%
@@ -467,7 +478,7 @@ ul
 		text-align: right
 		
 	.table-wrap
-		margin-top: 75px
+		margin-top: 40%
 		min-height: 200px 
 		top: 20px
 		
@@ -508,6 +519,11 @@ ul
 	.container
 		max-width: 960px
 		
+	.page
+		&:before
+			left: -13%
+			background-size:  contain
+		
 	.table-wrap
 		width: 75%
 		margin: 75px auto 0 
@@ -539,11 +555,10 @@ ul
 		
 	.page
 		&::before
-			// bottom: -5%
-			// left: 50%
-			transform: translateX(-34%)
-			// transform: translateX(-61%)
-			background-size: 100% 97%
+			height: 100%
+			width: 100%
+			left: 48%
+			transform: translateX(-42%)
 		&::after
 			background-size: 60%, 65%, 70%, 75%, 86%, 106%, 118%, 155%
 			background-position: 50% -405%, 50% -353%, 50% -216%, 50% -150%, 50% -84%, 50% -28%, 50% -17%, 50% 4%	
@@ -592,3 +607,10 @@ ul
 		top: auto
 		right: -200px
 		bottom: 30px
+
+@media only screen and (min-width : 1400px)
+	.page
+		&::before
+			transform: translateX(-41%)
+	.table-wrap
+		margin-top: 20%

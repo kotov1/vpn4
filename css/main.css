@@ -279,15 +279,14 @@ ul {
 .page:before {
   content: "";
   display: block;
-  width: 534px;
-  height: 761px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 25%;
-  left: 50%;
-  -webkit-transform: translateX(-33%);
-          transform: translateX(-33%);
+  top: -50px;
+  left: 15%;
   background: url("../img/fingers.png") no-repeat;
-  background-position: 50% 5px;
+  background-position: 50% 47%;
+  background-size: 100vw auto;
   z-index: -1;
 }
 .page::after {
@@ -340,7 +339,7 @@ ul {
 }
 
 .table-wrap {
-  margin-top: 555px;
+  margin-top: 135%;
   position: relative;
 }
 
@@ -476,6 +475,10 @@ ul {
     width: 80%;
   }
 
+  .page:before {
+    top: 10px;
+  }
+
   .table-pricing {
     width: 85%;
   }
@@ -483,6 +486,14 @@ ul {
 @media only screen and (min-width: 576px) {
   .container {
     max-width: 540px;
+  }
+
+  .page:before {
+    left: 13%;
+    background-size: 85vw auto;
+  }
+  .page::after {
+    background-size: 138%, 140%, 174%, 151%, 168%, 156%, 166%, 215%;
   }
 
   .advantages {
@@ -549,12 +560,10 @@ ul {
     padding-top: 15px;
     padding-bottom: 30px;
   }
-  .page::before {
-    height: 735px;
-    top: auto;
-    -webkit-transform: translateX(-61%);
-            transform: translateX(-61%);
-    background-size: 100% 95%;
+  .page:before {
+    left: -6%;
+    background-size: 670px auto;
+    background-position: 50% 100%;
   }
   .page::after {
     background-size: 124%, 123%, 122%, 120%, 140%, 160%, 180%, 200%;
@@ -586,7 +595,7 @@ ul {
   }
 
   .table-wrap {
-    margin-top: 75px;
+    margin-top: 40%;
     min-height: 200px;
     top: 20px;
   }
@@ -633,6 +642,11 @@ ul {
     max-width: 960px;
   }
 
+  .page:before {
+    left: -13%;
+    background-size: contain;
+  }
+
   .table-wrap {
     width: 75%;
     margin: 75px auto 0;
@@ -661,9 +675,11 @@ ul {
   }
 
   .page::before {
-    -webkit-transform: translateX(-34%);
-            transform: translateX(-34%);
-    background-size: 100% 97%;
+    height: 100%;
+    width: 100%;
+    left: 48%;
+    -webkit-transform: translateX(-42%);
+            transform: translateX(-42%);
   }
   .page::after {
     background-size: 60%, 65%, 70%, 75%, 86%, 106%, 118%, 155%;
@@ -725,5 +741,15 @@ ul {
     top: auto;
     right: -200px;
     bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .page::before {
+    -webkit-transform: translateX(-41%);
+            transform: translateX(-41%);
+  }
+
+  .table-wrap {
+    margin-top: 20%;
   }
 }
